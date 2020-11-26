@@ -1,0 +1,14 @@
+{
+    "name": "chaosannals/exert-sonic",
+    "type": "project",
+    "description": "exert sonic search.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "exert\\": "main"
+        }
+    },
+    "require": {
+        "ppshobi/psonic": "^1.2"
+    }
+}
