@@ -1,0 +1,13 @@
+version: '3.8'
+
+services: 
+  sonic-server:
+    image: valeriansaliou/sonic:v1.3.0
+    container_name: sonic-server
+    ports: 
+      - '1491:1491'
+    volumes: 
+      - D:\Sonic\config.cfg:/etc/sonic.cfg
+      # - /path/to/your/sonic/config.cfg:/etc/sonic.cfg
+      - D:\Sonic\store\:/var/lib/sonic/store/
+      # - /path/to/your/sonic/store/:/var/lib/sonic/store/
